@@ -6,19 +6,19 @@
   font-family: "Red Hat Display";
 }
 body {
-  background-image: url("./images/pattern-background-desktop.svg");
-  object-fit: cover;
-  background-repeat: no-repeat;
+  background: url("/images/pattern-background-desktop.svg"), #e1e9ff;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain;
 }
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .card {
   background-color: white;
-  width: 350px;
+  max-width: 432px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -29,7 +29,7 @@ body {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.card h2 {
+.card h1 {
   padding: 20px 10px 2px;
   text-align: center;
   color: hsl(223, 47%, 23%);
